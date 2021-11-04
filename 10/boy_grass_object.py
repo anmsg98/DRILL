@@ -19,6 +19,7 @@ class Ball:
     def __init__(self):
         self.image = load_image('ball41x41.png')
         self.x, self.y = (random.randint(50, 750), 599)
+        self.dy = 0
         self.radius = self.image.h // 2
         # print('Radius = %d' % self.radius)
     def draw(self):
